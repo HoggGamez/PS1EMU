@@ -18,10 +18,10 @@
   let hasFocus = true;
   document.addEventListener("visibilitychange", function () {
     if (document.visibilityState === 'visible') {
-      document.title = `eNGE - [${gameCode}]`;
+      document.title = `Dashboard`; // in base code it is (eNGE - [${gameCode}])
       hasFocus = true;
     } else {
-      document.title = 'paused';
+      document.title = 'Dashboard';
       hasFocus = false;
       spu.silence();
     }
